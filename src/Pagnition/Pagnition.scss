@@ -1,0 +1,111 @@
+.pagnition {
+  width: 100%;
+  position: relative;
+  &__title {
+    color: #fff;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  &__item {
+    width: 33.3%;
+    height: 300px;
+    padding: 10px;
+    overflow: hidden;
+  }
+  &__item-box {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #d3d3d3;
+  }
+  &__item-img {
+    width: 100%;
+    height: 160px;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__item-desc {
+    font-size: 14px;
+    color: #d3d3d3;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    span{
+      font-size: 20px;
+      color: rgb(65, 222, 243);
+    }
+  }
+  &__pagnition-box {
+    width: auto;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    button {
+      width: 30px;
+      height: 30px;
+      font-size: 28px;
+      color: #d3d3d3;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      border: 1px solid #d3d3d3;
+      &:hover {
+        color: #000;
+        background: #d3d3d3;
+      }
+    }
+  }
+  &__pag-list-box {
+    width: auto;
+    overflow: hidden;
+  }
+  &__pag-list {
+    display: flex;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  &__pag-item {
+    height: 60px;
+    padding: 10px;
+    min-width: 60px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    span {
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      display: flex;
+      cursor: pointer;
+      border-radius: 4px;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+      border: 1px solid #d3d3d3;
+    }
+  }
+}
+.activePag {
+  span {
+    color: #000;
+    background: #d3d3d3;
+    border-color: transparent;
+  }
+}

@@ -1,0 +1,44 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #1e2138;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+span {
+  display: inline-block;
+}
+.app {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  position: relative;
+  flex-direction: column;
+}
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1250px;
+  padding: 60px 25px;
+}
