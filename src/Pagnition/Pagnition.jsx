@@ -13,7 +13,7 @@ export default function Pagnition() {
   const [data, setDate] = useState(itemsList);
   const [pagCount, setPagCount] = useState(1);
   const [pagCountArr, setPagCountArr] = useState([]);
-
+  
   // = = = = = = = = = = = PAGNITION ITEMS COUNT HANDLER FUNC = = = = = = = = = = =
   const paginationHandler = () => {
     let arr = [];
