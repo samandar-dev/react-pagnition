@@ -13,7 +13,7 @@ export default function Pagnition() {
   const [data, setDate] = useState(itemsList);
   const [pagCount, setPagCount] = useState(1);
   const [pagCountArr, setPagCountArr] = useState([]);
-  
+
   // = = = = = = = = = = = PAGNITION ITEMS COUNT HANDLER FUNC = = = = = = = = = = =
   const paginationHandler = () => {
     let arr = [];
@@ -28,7 +28,8 @@ export default function Pagnition() {
   const pagPriveNextHandler = () => {
     let arr = [];
     let count = 1;
-    let startCount = pagCount === 1 ? 1 : pagItemsCount * pagCount - 5;
+    let startCount =
+      pagCount === 1 ? 1 : pagItemsCount * pagCount - pagItemsCount + 1;
     itemsList.map((item, inx) => {
       if (inx + 1 >= startCount && count <= pagItemsCount) {
         count += 1;
